@@ -5,7 +5,7 @@ Name: rubygem-%{gem_name}
 Version: 1.2.2
 Release: 1%{?dist}
 Summary: An interface for returning uname (platform) information
-License: Apache-2.0
+License: ASL 2.0
 URL: http://github.com/djberg96/sys-uname
 Source0: https://rubygems.org/gems/%{gem_name}-%{version}.gem
 BuildRequires: ruby(release)
@@ -53,7 +53,7 @@ popd
 %{gem_instdir}/CHANGES.md
 %license %{gem_instdir}/LICENSE
 %{gem_instdir}/MANIFEST.md
-%{gem_instdir}/certs
+%exclude %{gem_instdir}/certs
 %{gem_libdir}
 %exclude %{gem_cache}
 %{gem_spec}
